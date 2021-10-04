@@ -13,7 +13,8 @@ def list_task(event:,context:)
       error = input.error
       return {
         statusCode: error.status_code,
-        body: error.body
+        body: error.body,
+        test: 'test'
       }
     end
     output, error = App.list_tasks(input)
