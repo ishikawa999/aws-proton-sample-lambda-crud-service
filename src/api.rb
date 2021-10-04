@@ -21,7 +21,8 @@ def list_task(event:,context:)
     if error.nil?
       return {
         statusCode: 200,
-        body: output.to_output
+        body: output.to_output,
+        test: 'test'
       }
     else
       return {
